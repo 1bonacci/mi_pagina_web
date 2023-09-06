@@ -1,0 +1,136 @@
+html{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: relative; /* Asegura que los elementos dentro del encabezado se posicionen correctamente */
+    color: black;
+    text-align: center;
+    font-size: 2rem;;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.headerh1 {
+    display: inline-block; /* Permite que el título se comporte como un bloque en línea */
+    color: black; /* Color del texto del título */
+    padding: 10px 20px; /* Espacio alrededor del título */
+    font-size: 75px; 
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Estilos para la descripción */
+.descripcion {
+    padding: 25px;
+    width:53%;
+    margin:0 auto;
+    text-align:left;
+    text-align: justify;
+}
+
+#h2info {
+    font-weight: 650;
+    font-size: 30px;
+    font-family: 'Mukta', sans-serif;
+}
+
+#h2obras {
+    margin: 1;
+    font-weight: 650;
+    font-size: 30px;
+    font-family: 'Mukta', sans-serif;
+    padding-left: 500px;
+    line-height: 0.5;
+}
+
+/* Estilos para las obras */
+.obras {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.obras-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.obras-cuadro {
+    background: black;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    
+    top: 50%;
+    left: 50%;
+    margin-right: -100%;
+    transform: translate(100%, -20%)
+}
+
+.obra {
+    margin: 10px;
+    text-align: right;
+    line-height: 5px;
+    font-size: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+}
+
+.obra img {
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer-bg {
+    flex: 1;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los vínculos */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
