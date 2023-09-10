@@ -2,12 +2,6 @@ html{
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 /* Estilos para el encabezado */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -52,4 +46,90 @@ header {
     padding: 10px 20px; /* Espacio alrededor del título */
     font-size: 45px; 
     font-family: 'Mukta', sans-serif;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Espacio entre las imágenes */
+}
+
+.column {
+    flex: 25%; /* Cada columna ocupa el 25% del ancho */
+    padding: 10px;
+}
+
+.artwork {
+    padding-top: 20px;
+    display: block;
+    width: 95%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.artwork:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer-bg {
+    flex: 1;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los vínculos */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
