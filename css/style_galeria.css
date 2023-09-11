@@ -35,16 +35,15 @@ header {
     position: relative; /* Asegura que los elementos dentro del encabezado se posicionen correctamente */
     color: black;
     text-align: center;
-    font-size: 2rem;;
-    font-weight: 600;
     line-height: 1;
 }
 
 .headerh1g {
     display: inline-block; /* Permite que el título se comporte como un bloque en línea */
     color: black; /* Color del texto del título */
-    padding: 10px 20px; /* Espacio alrededor del título */
-    font-size: 45px; 
+    padding: 40px 20px; /* Espacio alrededor del título */
+    font-size: 50px; 
+    font-weight: 700;
     font-family: 'Mukta', sans-serif;
 }
 
@@ -57,15 +56,15 @@ body {
 }
 
 .gallery {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: -10px; /* Espacio entre las imágenes */
+    margin: 0 50px; /* Espacio entre las imágenes */
 }
 
 .column {
@@ -91,6 +90,7 @@ body {
 .caption {
     text-align: center;
     padding: 10px;
+    font-weight: 600;
 }
 
 footer {
