@@ -78,37 +78,47 @@ header {
     line-height: 1;
 }
 
-/* Estilos para las obras */
-.obras {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    align-items: center;
-    height: 100vh;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
+    padding: 0;
 }
 
-.obras-container {
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.featured-artwork {
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.obras-cuadro {
-    background: black;
-    color: white;
-    border-radius: 1em;
-    padding: 1em;
+.artwork {
+    width: calc(33.33% - 10px); /* Tres obras por fila con margen */
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
 }
 
-.obra {
-    margin: 10px;
-    text-align: right;
-    line-height: 5px;
-    font-size: 10px;
-    font-family: 'Mukta', sans-serif;
-    font-weight: 600;
+.artwork img {
+    max-width: 100%;
+    height: auto;
+}
+
+.artwork p {
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 
