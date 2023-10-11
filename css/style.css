@@ -1,12 +1,33 @@
-*{
+/* General */
+
+* {
     box-sizing: border-box;
 }
 
-/* Estilos para el encabezado */
+html,
+body,
+h1,
+h2,
+h3,
+li,
+section,
+label,
+input,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
+
+    display: flex;
+
+    justify-content: end;
 }
   
 /* Style the links inside the navigation bar */
@@ -31,7 +52,11 @@
     color: white;
 }
 
-.headerh1g {
+header {
+    text-align: center;
+}
+
+.headerh1 {
     color: black; /* Color del texto del título */
     padding: 40px 20px; /* Espacio alrededor del título */
     font-size: 70px; 
@@ -39,6 +64,49 @@
     font-family: 'Dancing Script', sans-serif;
     position: relative; /* Asegura que los elementos dentro del encabezado se posicionen correctamente */
     text-align: center;
+    line-height: 1;
+}
+
+/* Main */
+
+@media (min-width: 480px) {
+    main > article {
+        width: calc(50% - 5px);
+    }
+}
+@media (min-width: 768px) {
+    main > article {
+        width: calc(33.33% - 7px);
+    }
+}
+@media (min-width: 980px) {
+    main > article {
+        width: calc(25% - 8px);
+    }
+}
+
+/* INDEX */
+
+.descripcion {
+    padding: 25px;
+    width:53%;
+    margin:0 auto;
+    text-align:left;
+    text-align: justify;
+}
+
+#h2info {
+    font-weight: 650;
+    font-size: 30px;
+    font-family: 'Mukta', sans-serif;
+}
+
+#h2obras {
+    margin: 1;
+    font-weight: 650;
+    font-size: 30px;
+    font-family: 'Mukta', sans-serif;
+    padding-left: 500px;
     line-height: 1;
 }
 
@@ -50,82 +118,50 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 100px;
-}
-
-h1 {
     text-align: center;
 }
 
-.form-group {
-    margin-bottom: 20px;    
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-} 
-
-input[type="text"],
-input[type="email"],
-input[type="datetime-local"] {
-    width: 96%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-select {
-    width: 99.8%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-input[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo para el contenedor del label y el checkbox de la edad */
-.age-container {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    /* margin-top: 30px; */
+h1 {
+    font-size: 28px;
     margin-bottom: 20px;
-    display: block; /* Para que el contenedor no ocupe toda la línea */
 }
 
-/* Estilo para el label del checkbox */
-.age-label {
-    display: inline-block;
-    margin-right: 3px;
-    padding-top: 3px;
+.featured-artwork {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* Estilo para el checkbox */
-.age-checkbox {
-    vertical-align: text-bottom; /* Centra el checkbox verticalmente con el label */
+.artwork {
+    width: calc(33.33% - 10px); /* Tres obras por fila con margen */
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
 }
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+}
+
+.artwork p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* GALERIA */
+
+
+
+/* FORM */
+
+
+
+/* Footer */
 
 footer {
     background-color: #333;
