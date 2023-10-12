@@ -1,4 +1,4 @@
-/* General */
+/******************************************** General ********************************************/
 
 * {
     box-sizing: border-box;
@@ -9,6 +9,7 @@ body,
 h1,
 h2,
 h3,
+h4,
 li,
 section,
 label,
@@ -18,7 +19,7 @@ img {
     padding: 0;
 }
 
-/* Header */
+/******************************************** Header ********************************************/
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -67,9 +68,19 @@ header {
     line-height: 1;
 }
 
-/* Main */
+/******************************************** Main ********************************************/
 
-@media (min-width: 480px) {
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+
+/* @media (min-width: 480px) {
     main > article {
         width: calc(50% - 5px);
     }
@@ -83,9 +94,9 @@ header {
     main > article {
         width: calc(25% - 8px);
     }
-}
+} */
 
-/* INDEX */
+/******************************************** INDEX ********************************************/
 
 .descripcion {
     padding: 25px;
@@ -93,6 +104,7 @@ header {
     margin:0 auto;
     text-align:left;
     text-align: justify;
+    font-family: 'Mukta', sans-serif;
 }
 
 #h2info {
@@ -110,23 +122,17 @@ header {
     line-height: 1;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
-h1 {
-    font-size: 28px;
+.destacadas {
+    font-size: 35px;
     margin-bottom: 20px;
+    font-family: 'Dancing Script', sans-serif;
 }
 
 .featured-artwork {
@@ -134,34 +140,180 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+} 
+
+ .artwork__index {
+    padding: 20px 20px;
+    display: flex;
+    width: 95%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    align-items: center;
+}  
+
+.artwork__index:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
+}
+
+.descripcioni {
+    flex: 1; /* La descripción ocupará el 50% del espacio disponible */
+    padding: 20px; /* Espacio alrededor de la descripción (ajusta según tus necesidades) */
+}
+  
+.descripcioni h4 {
+    font-size: 18px; /* Tamaño del subtítulo (ajusta según tus necesidades) */
+    font-family: 'Dancing Script', sans-serif;
+}
+  
+.descripcioni > p {
+    font-size: 16px; /* Tamaño de la descripción (ajusta según tus necesidades) */
+    text-align: justify;
+    font-family: 'Mukta', sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px; /* Espacio entre las imágenes */
+}
+
+.column {
+    flex: 25%; /* Cada columna ocupa el 25% del ancho */
+    padding: 10px;
+}
+
+/******************************************** GALERIA ********************************************/
+
+.gallery {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px; /* Espacio entre las imágenes */
+}
+
+.column {
+    flex: 25%; /* Cada columna ocupa el 25% del ancho */
+    padding: 10px;
 }
 
 .artwork {
-    width: calc(33.33% - 10px); /* Tres obras por fila con margen */
-    margin-bottom: 20px;
+    padding-top: 20px;
+    display: block;
+    width: 95%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
     text-align: center;
-    color: #333;
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
 }
 
-.artwork img {
-    max-width: 100%;
-    height: auto;
+.artwork:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
 }
 
-.artwork p {
+.caption {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/******************************************** FORM ********************************************/
+
+.container__form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.titulo__form {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+} 
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"] {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
-    margin-top: 5px;
 }
 
-/* GALERIA */
+select {
+    width: 99.8%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
-/* FORM */
+/* Estilo para el contenedor del label y el checkbox de la edad */
+.age-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin-top: 30px; */
+    margin-bottom: 20px;
+    display: block; /* Para que el contenedor no ocupe toda la línea */
+}
 
+/* Estilo para el label del checkbox */
+.age-label {
+    display: inline-block;
+    margin-right: 3px;
+    padding-top: 3px;
+}
 
+/* Estilo para el checkbox */
+.age-checkbox {
+    vertical-align: text-bottom; /* Centra el checkbox verticalmente con el label */
+}
 
-/* Footer */
+/******************************************** Footer ********************************************/
 
 footer {
     background-color: #333;
@@ -203,3 +355,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+  
+  
