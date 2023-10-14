@@ -107,7 +107,7 @@ body {
     font-family: 'Mukta', sans-serif;
 }
 
-#h2info {
+.h2info {
     font-weight: 650;
     font-size: 30px;
     font-family: 'Mukta', sans-serif;
@@ -152,7 +152,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    
     transition: transform 0.3s ease;
     background-color: #ffffff;
     align-items: center;
