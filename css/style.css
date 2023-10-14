@@ -161,6 +161,7 @@ a {
     text-align: center;
     line-height: 1;
     -webkit-background-clip: text;
+    background-clip: text;
 	color: transparent;
 	background-image: url('/multimedia/background.jpg');
     background-position: center;
