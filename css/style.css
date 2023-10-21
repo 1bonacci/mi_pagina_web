@@ -42,7 +42,6 @@ body {
     width: 100%;
     justify-content: space-between;
     border: 1px solid #333333;
-    padding:15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -50,10 +49,10 @@ body {
 }
 
 .logo{
-    display: flex;
     height: 75px;
     /* alineacion sobre eje secundario dado por flex-align */
     align-items: center;
+    margin: 15px 0 0 10px;
 }
 
 .topnav a {
@@ -61,7 +60,7 @@ body {
     float: left;
     color: #9c9c9c;
     text-align: center;
-    padding: 25px 20px;
+    padding: 40px 20px;
     text-decoration: none;
     font-size: 25px;
 }
