@@ -164,8 +164,8 @@ a {
 	color: transparent;
 	background-image: url('/multimedia/background.jpg');
     background-position: center;
-    background-position-y: 60px;
-    background-position-x: 90px;
+    /* background-position-y: 60px;
+    background-position-x: 90px; */
 }
 
 .headerh1 {
@@ -332,10 +332,16 @@ a {
 }
 
 .caption {
-    text-align: center;
+    text-align: right;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 0.5;
+}
+
+.caption h3 {
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 25px;
 }
 
 /****************************************************************************************
