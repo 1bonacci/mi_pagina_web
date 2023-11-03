@@ -2,6 +2,7 @@
 
 :root {
     background: #fafafa;
+    font-family: 'Mukta', sans-serif;
 }
 
 * {
@@ -14,6 +15,7 @@ h1,
 h2,
 h3,
 h4,
+ul,
 li,
 label,
 input,
@@ -46,6 +48,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
+    margin-bottom: 80px;
 }
 
 .logo{
@@ -55,19 +58,60 @@ body {
     margin: 15px 0 0 10px;
 }
 
-.topnav a {
-    font-family: 'Mukta', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.header .header__links {
+    display: flex;
+    font-size: 20px;
+}
+
+.header__links li {
+    list-style: none;
+}
+
+.header__links a {
     float: left;
-    color: #9c9c9c;
+    color: #B9B4C7;
     text-align: center;
     padding: 40px 20px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.topnav a:hover {
+.header__links a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.header .toggle__btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+    padding: 20px 20px;
+}
+
+.header__mobile {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(43, 35, 35, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.header__mobile.open{
+    height: 130px;
+    cursor: pointer;
+}
+
+.header__mobile li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /****************************************************************************************
@@ -76,7 +120,7 @@ body {
 ******************************************** Main ********************************************/
 
 .main{
-    font-family: 'Mukta', sans-serif;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -93,7 +137,7 @@ body {
 
 .footer {
     display: flex;
-    font-family: 'Mukta', sans-serif;
+    
     text-align: center;
     justify-content: space-between;
     border: 1px solid #333333;
@@ -155,7 +199,7 @@ a {
     padding: 100px;
     font-size: 150px;
     font-weight: 700;
-    font-family: 'Mukta', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Mukta', Impact, sans-serif;
     position: relative; /* Asegura que los elementos dentro del encabezado se posicionen correctamente */
     text-align: center;
     line-height: 1;
@@ -170,7 +214,7 @@ a {
 
 .headerh1 {
     display: flex;
-    color: black;
+    color: #352F44;
     padding: 100px;
     font-size: 80px;
     font-weight: 600;
@@ -191,13 +235,15 @@ a {
     margin:0 auto;
     text-align:left;
     text-align: justify;
-    font-family: 'Mukta', sans-serif;
+    
     /* margin-top: 100px; */
 }
 
 .h2desc {
     display: flex;
     width: 70%;
+    font-family: 'Dancing Script', sans-serif;
+    
     margin: 0 auto;
     font-weight: 650;
     font-size: 30px;
@@ -263,12 +309,13 @@ a {
 .descripcioni h4 {
     font-size: 20px; /* Tamaño del subtítulo (ajusta según tus necesidades) */
     font-family: 'Dancing Script', sans-serif;
+    color: #352F44;
 }
   
 .descripcioni > p {
     font-size: 16px; /* Tamaño de la descripción (ajusta según tus necesidades) */
     text-align: justify;
-    font-family: 'Mukta', sans-serif;
+    
 }
 
 .column {
@@ -286,7 +333,7 @@ a {
     animation: opacityPulse 2s ease-out;
     animation-iteration-count: infinite; 
     opacity: 1;
-    font-family: 'Mukta', sans-serif;
+    
     margin-bottom: 10px;
 }
 
@@ -311,6 +358,7 @@ a {
 .column {
     flex: 25%; /* Cada columna ocupa el 25% del ancho */
     padding: 10px;
+    width: 100%;
 }
 
 .artwork {
@@ -320,7 +368,6 @@ a {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     text-align: center;
     transition: transform 0.3s ease;
     background-color: #ffffff;
@@ -333,15 +380,17 @@ a {
 
 .caption {
     text-align: right;
-    padding: 10px;
+    padding: 20px;
     font-weight: 400;
     line-height: 0.5;
 }
 
 .caption h3 {
+    color: #352F44;
     text-align: center;
     font-family: 'Dancing Script', sans-serif;
     font-size: 25px;
+    margin-bottom: 25px;
 }
 
 /****************************************************************************************
@@ -361,7 +410,8 @@ a {
 }
 
 .titulo__form {
-    font-family: 'Mukta', sans-serif;
+    color: #352F44;
+    font-family: 'Dancing Script', sans-serif;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -394,7 +444,8 @@ select {
 }
 
 input[type="submit"] {
-    background-color: #007BFF;
+
+    background-color: #352F44;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -402,6 +453,7 @@ input[type="submit"] {
     font-size: 18px;
     cursor: pointer;
     margin-top: 10px;
+    margin-left: 448px;
 }
 
 input[type="submit"]:hover {
@@ -469,6 +521,16 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 945px) {
+    .header .header__links {
+        display: none;
+    }
+    .header .toggle__btn {
+        display: block;
+    }
+    .header__mobile{
+        display: block;
+    }
+
     .header {
         width: 100%;
     }
