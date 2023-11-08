@@ -1,7 +1,8 @@
-const generos = {
+const galeria = {
     museo: "Galeria Vanguardia Visual",
     cuadros:[
         {
+            cuadro: 1,
             imagen:"./multimedia/marat.jpg",
             titulo:"La Morte di Marat",
             autor:"David",
@@ -11,6 +12,7 @@ const generos = {
             ubicacion:"Museo reale delle belle arti del Belgio, Bruxelles"
         },
         {
+            cuadro: 2,
             imagen:"./multimedia/zattera.jpg",
             titulo:"Zattera della Medusa",
             autor:"Gericault",
@@ -22,4 +24,4 @@ const generos = {
     ]
 }
 
-export default generos
+export default galeria
