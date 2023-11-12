@@ -55,7 +55,7 @@ if (imgs.length >= 3) {
     imgs[2].style.height = '230px';
 }
 
-{ 
+{ //lineHeight
 // Select the first caption div
 let caption = document.querySelector('.caption');
 
