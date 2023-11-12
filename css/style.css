@@ -148,7 +148,7 @@ body {
     transition: 0.3s;
     box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .footer-cont {
@@ -270,7 +270,7 @@ a {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 500px;
 }
 
 .destacadas {
@@ -335,7 +335,8 @@ a {
     align-items: center;
     flex-direction: column;
     width:100%;
-    margin-top: 100px;
+    margin-top: 500px;
+    margin-bottom: 300px;
 }
 .testimonial__heading{
     letter-spacing: 1px;
