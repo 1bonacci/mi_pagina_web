@@ -349,7 +349,7 @@ a {
     padding: 0;
 }
 
-.row {
+#row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 50px; /* Espacio entre las imágenes */
@@ -380,9 +380,10 @@ a {
 
 .caption {
     text-align: right;
-    padding: 20px;
-    font-weight: 400;
+    padding: 30px;
+    font-weight: 500;
     line-height: 0.5;
+    width: 100%;
 }
 
 .caption h3 {

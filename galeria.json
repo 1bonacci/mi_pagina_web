@@ -17,6 +17,15 @@
             "tecnica":"Olio su tela",
             "dimensiones":"491x716cm",
             "ubicacion":"Museo del Louvre, Parigi"
+        },
+        {
+            "imagen":"./multimedia/liberta.jpg",
+            "titulo":"La Libertà che guida il popolo",
+            "autor":"Eugène Delacroix",
+            "año":"1830",
+            "tecnica":"Olio su tela",
+            "dimensiones":"260×325 cm",
+            "ubicacion":"Museo del Louvre, Parigi "
         }
     ]
 }

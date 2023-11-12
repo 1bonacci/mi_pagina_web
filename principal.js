@@ -1,88 +1,67 @@
 import galeria from "./galeria.js"
 
-const contenedor = document.getElementById("gallery")
+const contenedor = document.getElementById("row")
 
 let htmlRenderizar = ``;
 
-galeria.cuadros.forEach((cuadros)=> {
-    htmlRenderizar += `<div class="gallery">
-    <div class="row">
+galeria.cuadros.forEach((cuadro)=> {
+    htmlRenderizar += `
         <div class="column">
             <div class="artwork">
-                <a href="https://es.wikipedia.org/wiki/La_muerte_de_Marat" target="_blank">
-                    <img src="multimedia/marat.jpg" alt="Obra de Arte 1">
+                <a href=${cuadro.link} target="_blank">
+                    <img src=${cuadro.imagen} alt="Obra de Arte 1">
                 </a>
                 <div class="caption">
-                    <h3>${cuadros.titulo}</h3>
-                    <p>${galeria.titulo}</p>                 
-                    <p>1793</p>
-                    <p>Olio su tela</p>
-                    <p>165×128 cm</p>
-                    <p>Museo reale delle belle arti del Belgio, Bruxelles</p>
+                    <h3>${cuadro.titulo}</h3>
+                    <p>${cuadro.autor}</p>
+                    <p>${cuadro.año}</p>
+                    <p>${cuadro.tecnica}</p>
+                    <p>${cuadro.dimensiones}</p>
+                    <p>${cuadro.ubicacion}</p>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="artwork">
-                <a href="https://es.wikipedia.org/wiki/La_balsa_de_la_Medusa" target="_blank">
-                    <img src="multimedia/zattera.jpg" width="330" alt="Obra de Arte 2">
-                </a>
-                <div class="caption">
-                    <h3>La Zattera della Medusa</h3>
-                    <p>Théodore Géricault</p>                 
-                    <p>1819</p>
-                    <p>Olio su tela</p>
-                    <p>491x716 cm</p>
-                    <p>Museo del Louvre, Parigi</p>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="artwork">
-                <a href="https://es.wikipedia.org/wiki/La_libertad_guiando_al_pueblo" target="_blank">
-                    <img src="multimedia/liberta.jpg" width="320" height="250" alt="Obra de Arte 3">
-                </a>
-                <div class="caption">
-                    <h3>La Libertà che guida il popolo</h3>
-                    <p>Eugène Delacroix</p>                 
-                    <p>1830</p>
-                    <p>Olio su tela</p>
-                    <p>260×325 cm</p>
-                    <p>Museo del Louvre, Parigi</p>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="artwork">
-                <img src="" alt="Obra de Arte 4">
-                <div class="caption">
-                    <p>Descripción de la obra de arte 4.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>`
+`
 })
 
 contenedor.innerHTML = htmlRenderizar
 
-
-
-/* fetch("./generos.json").then((datos)=>{
+fetch("./galeria.json").then((datos)=>{
 return datos.json()
 }).then((datos)=>{
     console.log(datos)
-}) */
+})
 
 const toggleBtn = document.querySelector('.toggle__btn')
-        const toggleBtnIcon = document.querySelector('.toggle__btn i')
-        const dropDownMenu = document.querySelector('.header__mobile')
+const toggleBtnIcon = document.querySelector('.toggle__btn i')
+const dropDownMenu = document.querySelector('.header__mobile')
 
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
+toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
 
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}
+
+// Select all image elements
+let imgs = document.querySelectorAll('.artwork img');
+
+// Check if there are at least 3 images
+if (imgs.length >= 3) {
+    // Change the third image's width and height
+    imgs[2].style.width = '300px';
+    imgs[2].style.height = '230px';
+}
+
+{ 
+// Select the first caption div
+let caption = document.querySelector('.caption');
+
+// Select the last p element within the caption
+let lastP = caption.querySelector('p:last-child');
+
+// Change the line height
+lastP.style.lineHeight = '1';
+}
