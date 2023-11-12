@@ -31,23 +31,23 @@
     </header>
 
     <main class="main">
-        <h1 class="headerh1">Visita al Museo</h1>
+        <h1 class="main__header">Visita al Museo</h1>
         <div class="container__form">
             <h1 class="titulo__form">Reservar Turno</h1>
             <form action="/formulario.html" method="POST">
-                <div class="form-group">
+                <div class="form__group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="apellido">Apellido:</label>
                     <input type="text" id="apellido" name="apellido" required>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="sexo">Sexo:</label>
                     <select id="sexo" name="sexo" required>
                         <option value="masculino">Masculino</option>
@@ -55,18 +55,18 @@
                         <option value="otro">Otro</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="edad">Edad:</label>
-                    <div class="age-container">
-                        <label class="age-label" for="mayor">Soy mayor de edad</label>
-                        <input class="age-checkbox" type="checkbox" id="mayor" name="edad" value="mayor">
+                    <div class="age__container">
+                        <label class="age__label" for="mayor">Soy mayor de edad</label>
+                        <input class="age__checkbox" type="checkbox" id="mayor" name="edad" value="mayor">
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <label for="fecha">Fecha y Hora de la Visita:</label>
                     <input type="datetime-local" id="fecha" name="fecha" required>
                 </div>
-                <div class="form-group">
+                <div class="form__group">
                     <input type="submit" value="Reservar">
                 </div>
             </form>
