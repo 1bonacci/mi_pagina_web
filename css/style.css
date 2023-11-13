@@ -260,7 +260,7 @@ a {
     flex-direction: column;
     margin: 0 auto;
     width:70%;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 20px;
     flex: 1;
     padding: 20px 20px;
@@ -271,7 +271,7 @@ a {
 }
 
 .info__texto p {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .container {
