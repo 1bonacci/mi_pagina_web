@@ -1,6 +1,6 @@
 # Aplicacion Web en HTML y CSS
 
-Este es un proyecto de aplicacion web, para la materia Aplicaciones Web 1, con un concepto pensado para la pagina web de una galeria de arte llamada Vanguardia Visual. Fue desarrollado con HTML, CSS y JavaScript.
+Este es un proyecto de aplicacion web, para la materia Aplicaciones Web 1, con un concepto pensado para la pagina web de una galeria de arte llamada Vanguardia Visual. El objetivo es provocar interes y mostrarle obras de arte que puedan llevar a las personas que visiten la pagina a querer visitar la galeria. Fue desarrollado con HTML, CSS y JavaScript.
 
 - - -
 
