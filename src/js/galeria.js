@@ -4,7 +4,7 @@ const galeria = {
         {
             cuadro: 1,
             link:"https://es.wikipedia.org/wiki/La_muerte_de_Marat",
-            imagen:"./multimedia/marat.jpg",
+            imagen:"./images/marat.jpg",
             titulo:"La Morte di Marat",
             autor:"David",
             año:"1793",
@@ -15,7 +15,7 @@ const galeria = {
         {
             cuadro: 2,
             link:"https://es.wikipedia.org/wiki/La_balsa_de_la_Medusa",
-            imagen:"./multimedia/zattera.jpg",
+            imagen:"./images/zattera.jpg",
             titulo:"Zattera della Medusa",
             autor:"Gericault",
             año:"1819",
@@ -26,7 +26,7 @@ const galeria = {
         {
             cuadro: 3,
             link:"https://es.wikipedia.org/wiki/La_libertad_guiando_al_pueblo",
-            imagen:"./multimedia/liberta.jpg",
+            imagen:"./images/liberta.jpg",
             titulo:"La Libertà che guida il popolo",
             autor:"Eugène Delacroix",
             año:"1830",

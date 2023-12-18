@@ -215,7 +215,7 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
 	color: transparent;
-	background-image: url('/multimedia/backgroundbyw.png');
+	background-image: url('/src/images/backgroundbyw.png');
     background-position: center;
     background-position-y: 45px;
     background-position-x: 20px; 
