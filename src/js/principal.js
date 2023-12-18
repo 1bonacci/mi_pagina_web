@@ -14,7 +14,7 @@ galeria.cuadros.forEach((cuadro)=> {
                 <div class="caption">
                     <h3>${cuadro.titulo}</h3>
                     <p>${cuadro.autor}</p>
-                    <p>${cuadro.año}</p>
+                    <p>${cuadro.anio}</p>
                     <p>${cuadro.tecnica}</p>
                     <p>${cuadro.dimensiones}</p>
                     <p>${cuadro.ubicacion}</p>

@@ -7,7 +7,7 @@ const galeria = {
             imagen:"./images/marat.jpg",
             titulo:"La Morte di Marat",
             autor:"David",
-            año:"1793",
+            anio:"1793",
             tecnica:"Olio su tela",
             dimensiones:"165x128cm",
             ubicacion:"Museo reale delle belle arti del Belgio, Bruxelles"
@@ -18,7 +18,7 @@ const galeria = {
             imagen:"./images/zattera.jpg",
             titulo:"Zattera della Medusa",
             autor:"Gericault",
-            año:"1819",
+            anio:"1819",
             tecnica:"Olio su tela",
             dimensiones:"491x716cm",
             ubicacion:"Museo del Louvre, Parigi "
@@ -29,7 +29,7 @@ const galeria = {
             imagen:"./images/liberta.jpg",
             titulo:"La Libertà che guida il popolo",
             autor:"Eugène Delacroix",
-            año:"1830",
+            anio:"1830",
             tecnica:"Olio su tela",
             dimensiones:"260×325 cm",
             ubicacion:"Museo del Louvre, Parigi "
